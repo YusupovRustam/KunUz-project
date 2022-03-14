@@ -23,8 +23,7 @@ public class AuthController {
     @PostMapping("/registration")
     public ResponseEntity registration(@RequestBody Registrationdto dto) {
         authService.registration(dto);
-//        ProfileDTO response = authService.authorization(dto);
-//        return ResponseEntity.ok(response);
+
         return ResponseEntity.ok("successfully!!");
     }
 
